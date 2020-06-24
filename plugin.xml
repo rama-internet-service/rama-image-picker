@@ -112,62 +112,55 @@
         <framework src="com.android.support:appcompat-v7:23+" />
 
 
-        <source-file src="src/android/com/esafirm/imagepicker/adapter/BaseListAdapter.java" target-dir="src/com/esafirm/imagepicker/adapter" />
-        <source-file src="src/android/com/esafirm/imagepicker/adapter/FolderPickerAdapter.java" target-dir="src/com/esafirm/imagepicker/adapter" />
-        <source-file src="src/android/com/esafirm/imagepicker/adapter/ImagePickerAdapter.java" target-dir="src/com/esafirm/imagepicker/adapter" />
-        <source-file src="src/android/com/esafirm/imagepicker/helper/ConfigUtils.java" target-dir="src/com/esafirm/imagepicker/helper" />
-        <source-file src="src/android/com/esafirm/imagepicker/helper/ImagePickerFileProvider.java" target-dir="src/com/esafirm/imagepicker/helper" />
-        <source-file src="src/android/com/esafirm/imagepicker/helper/ImagePickerPreferences.java" target-dir="src/com/esafirm/imagepicker/helper" />
-        <source-file src="src/android/com/esafirm/imagepicker/helper/ImagePickerUtils.java" target-dir="src/com/esafirm/imagepicker/helper" />
-        <source-file src="src/android/com/esafirm/imagepicker/helper/IpCrasher.java" target-dir="src/com/esafirm/imagepicker/helper" />
-        <source-file src="src/android/com/esafirm/imagepicker/helper/IpLogger.java" target-dir="src/com/esafirm/imagepicker/helper" />
-        <source-file src="src/android/com/esafirm/imagepicker/helper/LocaleManager.java" target-dir="src/com/esafirm/imagepicker/helper" />
-        <source-file src="src/android/com/esafirm/imagepicker/helper/ViewUtils.java" target-dir="src/com/esafirm/imagepicker/helper" />
-        <source-file src="src/android/com/esafirm/imagepicker/listeners/OnFolderClickListener.java" target-dir="src/com/esafirm/imagepicker/listeners" />
-        <source-file src="src/android/com/esafirm/imagepicker/listeners/OnImageClickListener.java" target-dir="src/com/esafirm/imagepicker/listeners" />
-        <source-file src="src/android/com/esafirm/imagepicker/listeners/OnImageSelectedListener.java" target-dir="src/com/esafirm/imagepicker/listeners" />
-        <source-file src="src/android/com/esafirm/imagepicker/model/Folder.java" target-dir="src/com/esafirm/imagepicker/model" />
-        <source-file src="src/android/com/esafirm/imagepicker/model/Image.java" target-dir="src/com/esafirm/imagepicker/model" />
-        <source-file src="src/android/com/esafirm/imagepicker/model/ImageFactory.java" target-dir="src/com/esafirm/imagepicker/model" />
-        <source-file src="src/android/com/esafirm/imagepicker/view/FakeR.java" target-dir="src/com/esafirm/imagepicker/view" />
-        <source-file src="src/android/com/esafirm/imagepicker/view/GridSpacingItemDecoration.java" target-dir="src/com/esafirm/imagepicker/view" />
-        <source-file src="src/android/com/esafirm/imagepicker/view/SnackBarView.java" target-dir="src/com/esafirm/imagepicker/view" />
-        <source-file src="src/android/com/esafirm/imagepicker/view/SquareFrameLayout.java" target-dir="src/com/esafirm/imagepicker/view" />
-
-        <source-file src="src/android/com/esafirm/imagepicker/features/ImagePickerActivity.java" target-dir="src/com/esafirm/imagepicker/features" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/ImagePickerComponentHolder.java" target-dir="src/com/esafirm/imagepicker/features" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/ImagePickerConfig.java" target-dir="src/com/esafirm/imagepicker/features" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/ImagePickerConfigFactory.java" target-dir="src/com/esafirm/imagepicker/features" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/ImagePickerESA.java" target-dir="src/com/esafirm/imagepicker/features" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/ImagePickerFragment.java" target-dir="src/com/esafirm/imagepicker/features" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/ImagePickerInteractionListener.java" target-dir="src/com/esafirm/imagepicker/features" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/ImagePickerPresenter.java" target-dir="src/com/esafirm/imagepicker/features" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/ImagePickerSavePath.java" target-dir="src/com/esafirm/imagepicker/features" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/ImagePickerView.java" target-dir="src/com/esafirm/imagepicker/features" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/IpCons.java" target-dir="src/com/esafirm/imagepicker/features" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/ReturnMode.java" target-dir="src/com/esafirm/imagepicker/features" />
-
-        <source-file src="src/android/com/esafirm/imagepicker/features/camera/CameraHelper.java" target-dir="src/com/esafirm/imagepicker/features/camera" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/camera/CameraModule.java" target-dir="src/com/esafirm/imagepicker/features/camera" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/camera/DefaultCameraModule.java" target-dir="src/com/esafirm/imagepicker/features/camera" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/camera/OnImageReadyListener.java" target-dir="src/com/esafirm/imagepicker/features/camera" />
-
-        <source-file src="src/android/com/esafirm/imagepicker/features/cameraonly/CameraOnlyConfig.java" target-dir="src/com/esafirm/imagepicker/features/cameraonly" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/cameraonly/ImagePickerCameraOnly.java" target-dir="src/com/esafirm/imagepicker/features/cameraonly" />
-
-        <source-file src="src/android/com/esafirm/imagepicker/features/common/BaseConfig.java" target-dir="src/com/esafirm/imagepicker/features/common" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/common/BasePresenter.java" target-dir="src/com/esafirm/imagepicker/features/common" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/common/ImageLoaderListener.java" target-dir="src/com/esafirm/imagepicker/features/common" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/common/MvpView.java" target-dir="src/com/esafirm/imagepicker/features/common" />
-
-        <source-file src="src/android/com/esafirm/imagepicker/features/fileloader/ImageLoaderListener.java" target-dir="src/com/esafirm/imagepicker/features/fileloader" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/fileloader/MvpView.java" target-dir="src/com/esafirm/imagepicker/features/fileloader" />
-
-        <source-file src="src/android/com/esafirm/imagepicker/features/imageloader/DefaultImageLoader.java" target-dir="src/com/esafirm/imagepicker/features/imageloader" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/imageloader/ImageLoader.java" target-dir="src/com/esafirm/imagepicker/features/imageloader" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/imageloader/ImageType.java" target-dir="src/com/esafirm/imagepicker/features/imageloader" />
-        
-        <source-file src="src/android/com/esafirm/imagepicker/features/recyclers/RecyclerViewManager.java" target-dir="src/com/esafirm/imagepicker/features/recyclers" />
+        <source-file src= "src/android/com/esafirm/imagepicker/adapter/BaseListAdapter.java" target-dir="src/com/esafirm/imagepicker/adapter" />
+<source-file src= "src/android/com/esafirm/imagepicker/adapter/FolderPickerAdapter.java" target-dir="src/com/esafirm/imagepicker/adapter" />
+<source-file src= "src/android/com/esafirm/imagepicker/adapter/ImagePickerAdapter.java" target-dir="src/com/esafirm/imagepicker/adapter" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/camera/CameraHelper.java" target-dir="src/com/esafirm/imagepicker/features/camera" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/camera/CameraModule.java" target-dir="src/com/esafirm/imagepicker/features/camera" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/camera/DefaultCameraModule.java" target-dir="src/com/esafirm/imagepicker/features/camera" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/camera/OnImageReadyListener.java" target-dir="src/com/esafirm/imagepicker/features/camera" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/cameraonly/CameraOnlyConfig.java" target-dir="src/com/esafirm/imagepicker/features/cameraonly" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/cameraonly/ImagePickerCameraOnly.java" target-dir="src/com/esafirm/imagepicker/features/cameraonly" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/common/BaseConfig.java" target-dir="src/com/esafirm/imagepicker/features/common" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/common/BasePresenter.java" target-dir="src/com/esafirm/imagepicker/features/common" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/common/ImageLoaderListener.java" target-dir="src/com/esafirm/imagepicker/features/common" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/common/MvpView.java" target-dir="src/com/esafirm/imagepicker/features/common" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/fileloader/DefaultImageFileLoader.java" target-dir="src/com/esafirm/imagepicker/features/fileloader" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/fileloader/ImageFileLoader.java" target-dir="src/com/esafirm/imagepicker/features/fileloader" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/imageloader/DefaultImageLoader.java" target-dir="src/com/esafirm/imagepicker/features/imageloader" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/imageloader/ImageLoader.java" target-dir="src/com/esafirm/imagepicker/features/imageloader" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/imageloader/ImageType.java" target-dir="src/com/esafirm/imagepicker/features/imageloader" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/recyclers/RecyclerViewManager.java" target-dir="src/com/esafirm/imagepicker/features/recyclers" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/ImagePickerActivity.java" target-dir="src/com/esafirm/imagepicker/features" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/ImagePickerComponentHolder.java" target-dir="src/com/esafirm/imagepicker/features" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/ImagePickerConfig.java" target-dir="src/com/esafirm/imagepicker/features" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/ImagePickerConfigFactory.java" target-dir="src/com/esafirm/imagepicker/features" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/ImagePickerESA.java" target-dir="src/com/esafirm/imagepicker/features" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/ImagePickerFragment.java" target-dir="src/com/esafirm/imagepicker/features" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/ImagePickerInteractionListener.java" target-dir="src/com/esafirm/imagepicker/features" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/ImagePickerPresenter.java" target-dir="src/com/esafirm/imagepicker/features" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/ImagePickerSavePath.java" target-dir="src/com/esafirm/imagepicker/features" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/ImagePickerView.java" target-dir="src/com/esafirm/imagepicker/features" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/IpCons.java" target-dir="src/com/esafirm/imagepicker/features" />
+<source-file src= "src/android/com/esafirm/imagepicker/features/ReturnMode.java" target-dir="src/com/esafirm/imagepicker/features" />
+<source-file src= "src/android/com/esafirm/imagepicker/helper/ConfigUtils.java" target-dir="src/com/esafirm/imagepicker/helper" />
+<source-file src= "src/android/com/esafirm/imagepicker/helper/ImagePickerFileProvider.java" target-dir="src/com/esafirm/imagepicker/helper" />
+<source-file src= "src/android/com/esafirm/imagepicker/helper/ImagePickerPreferences.java" target-dir="src/com/esafirm/imagepicker/helper" />
+<source-file src= "src/android/com/esafirm/imagepicker/helper/ImagePickerUtils.java" target-dir="src/com/esafirm/imagepicker/helper" />
+<source-file src= "src/android/com/esafirm/imagepicker/helper/IpCrasher.java" target-dir="src/com/esafirm/imagepicker/helper" />
+<source-file src= "src/android/com/esafirm/imagepicker/helper/IpLogger.java" target-dir="src/com/esafirm/imagepicker/helper" />
+<source-file src= "src/android/com/esafirm/imagepicker/helper/LocaleManager.java" target-dir="src/com/esafirm/imagepicker/helper" />
+<source-file src= "src/android/com/esafirm/imagepicker/helper/ViewUtils.java" target-dir="src/com/esafirm/imagepicker/helper" />
+<source-file src= "src/android/com/esafirm/imagepicker/listeners/OnFolderClickListener.java" target-dir="src/com/esafirm/imagepicker/listeners" />
+<source-file src= "src/android/com/esafirm/imagepicker/listeners/OnImageClickListener.java" target-dir="src/com/esafirm/imagepicker/listeners" />
+<source-file src= "src/android/com/esafirm/imagepicker/listeners/OnImageSelectedListener.java" target-dir="src/com/esafirm/imagepicker/listeners" />
+<source-file src= "src/android/com/esafirm/imagepicker/model/Folder.java" target-dir="src/com/esafirm/imagepicker/model" />
+<source-file src= "src/android/com/esafirm/imagepicker/model/Image.java" target-dir="src/com/esafirm/imagepicker/model" />
+<source-file src= "src/android/com/esafirm/imagepicker/model/ImageFactory.java" target-dir="src/com/esafirm/imagepicker/model" />
+<source-file src= "src/android/com/esafirm/imagepicker/view/FakeR.java" target-dir="src/com/esafirm/imagepicker/view" />
+<source-file src= "src/android/com/esafirm/imagepicker/view/GridSpacingItemDecoration.java" target-dir="src/com/esafirm/imagepicker/view" />
+<source-file src= "src/android/com/esafirm/imagepicker/view/SnackBarView.java" target-dir="src/com/esafirm/imagepicker/view" />
+<source-file src= "src/android/com/esafirm/imagepicker/view/SquareFrameLayout.java" target-dir="src/com/esafirm/imagepicker/view" />
 
 
 
