@@ -99,9 +99,10 @@
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <activity android:label="@string/multi_app_name" android:name="com.synconset.MultiImageChooserActivity" android:theme="@style/Theme.AppCompat.Light">
-            </activity>
+            <!-- <activity android:label="@string/multi_app_name" android:name="com.synconset.MultiImageChooserActivity" android:theme="@style/Theme.AppCompat.Light">
+            </activity> -->
             <activity android:name="com.esafirm.imagepicker.features.ImagePickerActivity" />
+            <application android:theme="@style/ef_BaseTheme" />
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
