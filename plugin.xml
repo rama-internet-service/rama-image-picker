@@ -101,6 +101,7 @@
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <activity android:label="@string/multi_app_name" android:name="com.synconset.MultiImageChooserActivity" android:theme="@style/Theme.AppCompat.Light">
             </activity>
+            <activity android:name="com.esafirm.imagepicker.features.ImagePickerActivity" />
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
@@ -109,9 +110,124 @@
 
         <framework src="com.android.support:appcompat-v7:23+" />
 
+
+        <source-file src="src/android/com/esafirm/imagepicker/adapter/BaseListAdapter.java" target-dir="src/com/esafirm/imagepicker/adapter" />
+        <source-file src="src/android/com/esafirm/imagepicker/adapter/FolderPickerAdapter.java" target-dir="src/com/esafirm/imagepicker/adapter" />
+        <source-file src="src/android/com/esafirm/imagepicker/adapter/ImagePickerAdapter.java" target-dir="src/com/esafirm/imagepicker/adapter" />
+        <source-file src="src/android/com/esafirm/imagepicker/helper/ConfigUtils.java" target-dir="src/com/esafirm/imagepicker/helper" />
+        <source-file src="src/android/com/esafirm/imagepicker/helper/ImagePickerFileProvider.java" target-dir="src/com/esafirm/imagepicker/helper" />
+        <source-file src="src/android/com/esafirm/imagepicker/helper/ImagePickerPreferences.java" target-dir="src/com/esafirm/imagepicker/helper" />
+        <source-file src="src/android/com/esafirm/imagepicker/helper/ImagePickerUtils.java" target-dir="src/com/esafirm/imagepicker/helper" />
+        <source-file src="src/android/com/esafirm/imagepicker/helper/IpCrasher.java" target-dir="src/com/esafirm/imagepicker/helper" />
+        <source-file src="src/android/com/esafirm/imagepicker/helper/IpLogger.java" target-dir="src/com/esafirm/imagepicker/helper" />
+        <source-file src="src/android/com/esafirm/imagepicker/helper/LocaleManager.java" target-dir="src/com/esafirm/imagepicker/helper" />
+        <source-file src="src/android/com/esafirm/imagepicker/helper/ViewUtils.java" target-dir="src/com/esafirm/imagepicker/helper" />
+        <source-file src="src/android/com/esafirm/imagepicker/listeners/OnFolderClickListener.java" target-dir="src/com/esafirm/imagepicker/listeners" />
+        <source-file src="src/android/com/esafirm/imagepicker/listeners/OnImageClickListener.java" target-dir="src/com/esafirm/imagepicker/listeners" />
+        <source-file src="src/android/com/esafirm/imagepicker/listeners/OnImageSelectedListener.java" target-dir="src/com/esafirm/imagepicker/listeners" />
+        <source-file src="src/android/com/esafirm/imagepicker/model/Folder.java" target-dir="src/com/esafirm/imagepicker/model" />
+        <source-file src="src/android/com/esafirm/imagepicker/model/Image.java" target-dir="src/com/esafirm/imagepicker/model" />
+        <source-file src="src/android/com/esafirm/imagepicker/model/ImageFactory.java" target-dir="src/com/esafirm/imagepicker/model" />
+        <source-file src="src/android/com/esafirm/imagepicker/view/FakeR.java" target-dir="src/com/esafirm/imagepicker/view" />
+        <source-file src="src/android/com/esafirm/imagepicker/view/GridSpacingItemDecoration.java" target-dir="src/com/esafirm/imagepicker/view" />
+        <source-file src="src/android/com/esafirm/imagepicker/view/SnackBarView.java" target-dir="src/com/esafirm/imagepicker/view" />
+        <source-file src="src/android/com/esafirm/imagepicker/view/SquareFrameLayout.java" target-dir="src/com/esafirm/imagepicker/view" />
+
+        <source-file src="src/android/com/esafirm/imagepicker/features/ImagePickerActivity.java" target-dir="src/com/esafirm/imagepicker/features" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/ImagePickerComponentHolder.java" target-dir="src/com/esafirm/imagepicker/features" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/ImagePickerConfig.java" target-dir="src/com/esafirm/imagepicker/features" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/ImagePickerConfigFactory.java" target-dir="src/com/esafirm/imagepicker/features" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/ImagePickerESA.java" target-dir="src/com/esafirm/imagepicker/features" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/ImagePickerFragment.java" target-dir="src/com/esafirm/imagepicker/features" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/ImagePickerInteractionListener.java" target-dir="src/com/esafirm/imagepicker/features" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/ImagePickerPresenter.java" target-dir="src/com/esafirm/imagepicker/features" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/ImagePickerSavePath.java" target-dir="src/com/esafirm/imagepicker/features" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/ImagePickerView.java" target-dir="src/com/esafirm/imagepicker/features" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/IpCons.java" target-dir="src/com/esafirm/imagepicker/features" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/ReturnMode.java" target-dir="src/com/esafirm/imagepicker/features" />
+
+        <source-file src="src/android/com/esafirm/imagepicker/features/camera/CameraHelper.java" target-dir="src/com/esafirm/imagepicker/features/camera" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/camera/CameraModule.java" target-dir="src/com/esafirm/imagepicker/features/camera" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/camera/DefaultCameraModule.java" target-dir="src/com/esafirm/imagepicker/features/camera" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/camera/OnImageReadyListener.java" target-dir="src/com/esafirm/imagepicker/features/camera" />
+
+        <source-file src="src/android/com/esafirm/imagepicker/features/cameraonly/DefaultCameraModule.java" target-dir="src/com/esafirm/imagepicker/features/cameraonly" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/cameraonly/OnImageReadyListener.java" target-dir="src/com/esafirm/imagepicker/features/cameraonly" />
+
+        <source-file src="src/android/com/esafirm/imagepicker/features/common/BaseConfig.java" target-dir="src/com/esafirm/imagepicker/features/common" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/common/BasePresenter.java" target-dir="src/com/esafirm/imagepicker/features/common" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/common/ImageLoaderListener.java" target-dir="src/com/esafirm/imagepicker/features/common" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/common/MvpView.java" target-dir="src/com/esafirm/imagepicker/features/common" />
+
+        <source-file src="src/android/com/esafirm/imagepicker/features/fileloader/ImageLoaderListener.java" target-dir="src/com/esafirm/imagepicker/features/fileloader" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/fileloader/MvpView.java" target-dir="src/com/esafirm/imagepicker/features/fileloader" />
+
+        <source-file src="src/android/com/esafirm/imagepicker/features/imageloader/DefaultImageLoader.java" target-dir="src/com/esafirm/imagepicker/features/imageloader" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/imageloader/ImageLoader.java" target-dir="src/com/esafirm/imagepicker/features/imageloader" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/imageloader/ImageType.java" target-dir="src/com/esafirm/imagepicker/features/imageloader" />
+        
+        <source-file src="src/android/com/esafirm/imagepicker/features/recyclers/RecyclerViewManager.java" target-dir="src/com/esafirm/imagepicker/features/recyclers" />
+
+
+
         <source-file src="src/android/com/synconset/ImagePicker/ImagePicker.java" target-dir="src/com/synconset" />
         <source-file src="src/android/com/synconset/ImagePicker/FakeR.java" target-dir="src/com/synconset" />
         <source-file src="src/android/com/synconset/ImagePicker/ResultIPC.java" target-dir="src/com/synconset" />
+
+
+        <resource-file src="src/android/LibraryEsa/res/drawable/ef_folder_placeholder.xml" target="res/drawable/ef_folder_placeholder.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/drawable/ef_image_placeholder.xml" target="res/drawable/ef_image_placeholder.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/drawable-hdpi/ef_ic_arrow_back.png" target="res/drawable-hdpi/ef_ic_arrow_back.png"/>
+        <resource-file src="src/android/LibraryEsa/res/drawable-hdpi/ef_ic_arrow_forward.png" target="res/drawable-hdpi/ef_ic_arrow_forward.png"/>
+        <resource-file src="src/android/LibraryEsa/res/drawable-hdpi/ef_ic_camera_white.png" target="res/drawable-hdpi/ef_ic_camera_white.png"/>
+        <resource-file src="src/android/LibraryEsa/res/drawable-hdpi/ef_ic_done_white.png" target="res/drawable-hdpi/ef_ic_done_white.png"/>
+        <resource-file src="src/android/LibraryEsa/res/drawable-mdpi/ef_ic_arrow_back.png" target="res/drawable-mdpi/ef_ic_arrow_back.png"/>
+        <resource-file src="src/android/LibraryEsa/res/drawable-mdpi/ef_ic_arrow_forward.png" target="res/drawable-mdpi/ef_ic_arrow_forward.png"/>
+        <resource-file src="src/android/LibraryEsa/res/drawable-mdpi/ef_ic_camera_white.png" target="res/drawable-mdpi/ef_ic_camera_white.png"/>
+        <resource-file src="src/android/LibraryEsa/res/drawable-mdpi/ef_ic_done_white.png" target="res/drawable-mdpi/ef_ic_done_white.png"/>
+        <resource-file src="src/android/LibraryEsa/res/drawable-xhdpi/ef_ic_arrow_back.png" target="res/drawable-xhdpi/ef_ic_arrow_back.png"/>
+        <resource-file src="src/android/LibraryEsa/res/drawable-xhdpi/ef_ic_arrow_forward.png" target="res/drawable-xhdpi/ef_ic_arrow_forward.png"/>
+        <resource-file src="src/android/LibraryEsa/res/drawable-xhdpi/ef_ic_camera_white.png" target="res/drawable-xhdpi/ef_ic_camera_white.png"/>
+        <resource-file src="src/android/LibraryEsa/res/drawable-xhdpi/ef_ic_done_white.png" target="res/drawable-xhdpi/ef_ic_done_white.png"/>
+        <resource-file src="src/android/LibraryEsa/res/drawable-xxhdpi/ef_ic_arrow_back.png" target="res/drawable-xxhdpi/ef_ic_arrow_back.png"/>
+        <resource-file src="src/android/LibraryEsa/res/drawable-xxhdpi/ef_ic_arrow_forward.png" target="res/drawable-xxhdpi/ef_ic_arrow_forward.png"/>
+        <resource-file src="src/android/LibraryEsa/res/drawable-xxhdpi/ef_ic_camera_white.png" target="res/drawable-xxhdpi/ef_ic_camera_white.png"/>
+        <resource-file src="src/android/LibraryEsa/res/drawable-xxhdpi/ef_ic_done_white.png" target="res/drawable-xxhdpi/ef_ic_done_white.png"/>
+        <resource-file src="src/android/LibraryEsa/res/drawable-xxxhdpi/ef_ic_arrow_back.png" target="res/drawable-xxxhdpi/ef_ic_arrow_back.png"/>
+        <resource-file src="src/android/LibraryEsa/res/drawable-xxxhdpi/ef_ic_arrow_forward.png" target="res/drawable-xxxhdpi/ef_ic_arrow_forward.png"/>
+        <resource-file src="src/android/LibraryEsa/res/drawable-xxxhdpi/ef_ic_camera_white.png" target="res/drawable-xxxhdpi/ef_ic_camera_white.png"/>
+        <resource-file src="src/android/LibraryEsa/res/drawable-xxxhdpi/ef_ic_done_white.png" target="res/drawable-xxxhdpi/ef_ic_done_white.png"/>
+        <resource-file src="src/android/LibraryEsa/res/layout/ef_activity_image_picker.xml" target="res/layout/ef_activity_image_picker.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/layout/ef_fragment_image_picker.xml" target="res/layout/ef_fragment_image_picker.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/layout/ef_imagepicker_item_folder.xml" target="res/layout/ef_imagepicker_item_folder.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/layout/ef_imagepicker_item_image.xml" target="res/layout/ef_imagepicker_item_image.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/layout/ef_imagepicker_toolbar.xml" target="res/layout/ef_imagepicker_toolbar.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/layout/ef_imagepikcer_snackbar.xml" target="res/layout/ef_imagepikcer_snackbar.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/menu/ef_image_picker_menu_main.xml" target="res/menu/ef_image_picker_menu_main.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/values/colors.xml" target="res/values/colors.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/values/dimens.xml" target="res/values/dimens.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/values/strings.xml" target="res/values/strings.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/values/styles.xml" target="res/values/styles.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/values-ar/strings.xml" target="res/values-ar/strings.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/values-da/strings.xml" target="res/values-da/strings.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/values-de/strings.xml" target="res/values-de/strings.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/values-fr/strings.xml" target="res/values-fr/strings.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/values-in/strings.xml" target="res/values-in/strings.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/values-it/strings.xml" target="res/values-it/strings.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/values-ko/strings.xml" target="res/values-ko/strings.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/values-pt-rBR/strings.xml" target="res/values-pt-rBR/strings.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/values-ro/strings.xml" target="res/values-ro/strings.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/values-ru/strings.xml" target="res/values-ru/strings.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/values-sw600dp/dimens.xml" target="res/values-sw600dp/dimens.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/values-tr/strings.xml" target="res/values-tr/strings.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/values-uk/strings.xml" target="res/values-uk/strings.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/values-zh-rCN/strings.xml" target="res/values-zh-rCN/strings.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/values-zh-rTW/strings.xml" target="res/values-zh-rTW/strings.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/xml/image_picker_provider_paths.xml" target="res/xml/image_picker_provider_paths.xml"/>
+
+
+		<framework src="com.github.bumptech.glide:glide:4.11.0" />
+
 
         <source-file src="src/android/Library/src/ImageFetcher.java" target-dir="src/com/synconset"/>
         <source-file src="src/android/Library/src/MultiImageChooserActivity.java" target-dir="src/com/synconset"/>
@@ -147,5 +263,6 @@
 
         <framework src="src/android/ignorelinterrors.gradle" custom="true" type="gradleReference"/>
         <framework src="src/android/androidtarget.gradle" custom="true" type="gradleReference"/>
+
     </platform>
 </plugin>

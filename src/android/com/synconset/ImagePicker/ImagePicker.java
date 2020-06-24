@@ -3,9 +3,21 @@
  */
 package com.synconset;
 
+import android.Manifest;
+import android.annotation.SuppressLint;
+import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.os.Build;
+import android.os.Bundle;
+
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
+import com.esafirm.imagepicker.features.ImagePickerESA;
+import com.esafirm.imagepicker.model.Image;
+
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
-
 import org.apache.cordova.PluginResult;
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -13,15 +25,6 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import android.Manifest;
-import android.annotation.SuppressLint;
-import android.app.Activity;
-import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.os.Build;
-import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 
 public class ImagePicker extends CordovaPlugin {
 
@@ -33,7 +36,12 @@ public class ImagePicker extends CordovaPlugin {
 
     private CallbackContext callbackContext;
 
-    public boolean execute(String action, final JSONArray args, final CallbackContext callbackContext) throws JSONException {
+  private ArrayList<Image> images = new ArrayList<>();
+  private ArrayList<String> imagesString = new ArrayList<>();
+
+
+
+  public boolean execute(String action, final JSONArray args, final CallbackContext callbackContext) throws JSONException {
         this.callbackContext = callbackContext;
 
         if (ACTION_HAS_READ_PERMISSION.equals(action)) {
@@ -46,7 +54,9 @@ public class ImagePicker extends CordovaPlugin {
 
         } else if (ACTION_GET_PICTURES.equals(action)) {
             final JSONObject params = args.getJSONObject(0);
-            final Intent imagePickerIntent = new Intent(cordova.getActivity(), MultiImageChooserActivity.class);
+            //final Intent imagePickerIntent = new Intent(cordova.getActivity(), MultiImageChooserActivity.class);
+            //final Intent imagePickerIntent = new Intent(cordova.getActivity(), ImagePickerActivity.class);
+          final Intent imagePickerIntent = ImagePickerESA.create(cordova.getActivity()).getIntent(cordova.getActivity());
             int max = 20;
             int desiredWidth = 0;
             int desiredHeight = 0;
@@ -122,12 +132,22 @@ public class ImagePicker extends CordovaPlugin {
     }
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if (resultCode == Activity.RESULT_OK && data != null) {
+      if (ImagePickerESA.shouldHandle(requestCode, resultCode, data)) {
+        images = (ArrayList<Image>) ImagePickerESA.getImages(data);
+        imagesString = new ArrayList<>();
+        for (int i = 0, l = images.size(); i < l; i++) {
+          imagesString.add(images.get(i).getPath());
+        }
+        JSONArray res = new JSONArray(imagesString);
+        callbackContext.success(res);
+
+      }
+       /* if (resultCode == Activity.RESULT_OK && data != null) {
             int sync = data.getIntExtra("bigdata:synccode", -1);
             final Bundle bigData = ResultIPC.get().getLargeData(sync);
-      
+
             ArrayList<String> fileNames = bigData.getStringArrayList("MULTIPLEFILENAMES");
-    
+
             JSONArray res = new JSONArray(fileNames);
             callbackContext.success(res);
 
@@ -141,7 +161,7 @@ public class ImagePicker extends CordovaPlugin {
 
         } else {
             callbackContext.error("No images selected");
-        }
+        }*/
     }
 
     /**
@@ -149,7 +169,6 @@ public class ImagePicker extends CordovaPlugin {
      * save/restore APIs to handle the case where the CordovaActivity is killed by the OS
      * before we get the launched Activity's result.
      *
-     * @see http://cordova.apache.org/docs/en/dev/guide/platforms/android/plugin.html#launching-other-activities
      */
     public void onRestoreStateForActivityResult(Bundle state, CallbackContext callbackContext) {
         this.callbackContext = callbackContext;
@@ -170,4 +189,7 @@ public class ImagePicker extends CordovaPlugin {
         }
     }
 */
+
+
+
 }
