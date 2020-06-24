@@ -152,8 +152,8 @@
         <source-file src="src/android/com/esafirm/imagepicker/features/camera/DefaultCameraModule.java" target-dir="src/com/esafirm/imagepicker/features/camera" />
         <source-file src="src/android/com/esafirm/imagepicker/features/camera/OnImageReadyListener.java" target-dir="src/com/esafirm/imagepicker/features/camera" />
 
-        <source-file src="src/android/com/esafirm/imagepicker/features/cameraonly/DefaultCameraModule.java" target-dir="src/com/esafirm/imagepicker/features/cameraonly" />
-        <source-file src="src/android/com/esafirm/imagepicker/features/cameraonly/OnImageReadyListener.java" target-dir="src/com/esafirm/imagepicker/features/cameraonly" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/cameraonly/CameraOnlyConfig.java" target-dir="src/com/esafirm/imagepicker/features/cameraonly" />
+        <source-file src="src/android/com/esafirm/imagepicker/features/cameraonly/ImagePickerCameraOnly.java" target-dir="src/com/esafirm/imagepicker/features/cameraonly" />
 
         <source-file src="src/android/com/esafirm/imagepicker/features/common/BaseConfig.java" target-dir="src/com/esafirm/imagepicker/features/common" />
         <source-file src="src/android/com/esafirm/imagepicker/features/common/BasePresenter.java" target-dir="src/com/esafirm/imagepicker/features/common" />
