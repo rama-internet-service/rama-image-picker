@@ -200,7 +200,7 @@
         <resource-file src="src/android/LibraryEsa/res/menu/ef_image_picker_menu_main.xml" target="res/menu/ef_image_picker_menu_main.xml"/>
         <resource-file src="src/android/LibraryEsa/res/values/colors.xml" target="res/values/colors.xml"/>
         <resource-file src="src/android/LibraryEsa/res/values/dimens.xml" target="res/values/dimens.xml"/>
-        <resource-file src="src/android/LibraryEsa/res/values/strings.xml" target="res/values/strings.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/values/efstrings.xml" target="res/values/strings.xml"/>
         <resource-file src="src/android/LibraryEsa/res/values/styles.xml" target="res/values/styles.xml"/>
         <resource-file src="src/android/LibraryEsa/res/values-ar/strings.xml" target="res/values-ar/strings.xml"/>
         <resource-file src="src/android/LibraryEsa/res/values-da/strings.xml" target="res/values-da/strings.xml"/>
