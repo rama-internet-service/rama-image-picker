@@ -202,21 +202,8 @@
         <resource-file src="src/android/LibraryEsa/res/values/dimens.xml" target="res/values/dimens.xml"/>
         <resource-file src="src/android/LibraryEsa/res/values/efstrings.xml" target="res/values/efstrings.xml"/>
         <resource-file src="src/android/LibraryEsa/res/values/styles.xml" target="res/values/styles.xml"/>
-        <resource-file src="src/android/LibraryEsa/res/values-ar/strings.xml" target="res/values-ar/strings.xml"/>
-        <resource-file src="src/android/LibraryEsa/res/values-da/strings.xml" target="res/values-da/strings.xml"/>
-        <resource-file src="src/android/LibraryEsa/res/values-de/strings.xml" target="res/values-de/strings.xml"/>
-        <resource-file src="src/android/LibraryEsa/res/values-fr/strings.xml" target="res/values-fr/strings.xml"/>
-        <resource-file src="src/android/LibraryEsa/res/values-in/strings.xml" target="res/values-in/strings.xml"/>
-        <resource-file src="src/android/LibraryEsa/res/values-it/strings.xml" target="res/values-it/strings.xml"/>
-        <resource-file src="src/android/LibraryEsa/res/values-ko/strings.xml" target="res/values-ko/strings.xml"/>
-        <resource-file src="src/android/LibraryEsa/res/values-pt-rBR/strings.xml" target="res/values-pt-rBR/strings.xml"/>
-        <resource-file src="src/android/LibraryEsa/res/values-ro/strings.xml" target="res/values-ro/strings.xml"/>
-        <resource-file src="src/android/LibraryEsa/res/values-ru/strings.xml" target="res/values-ru/strings.xml"/>
+        <resource-file src="src/android/LibraryEsa/res/values-it/efstrings.xml" target="res/values-it/efstrings.xml"/>
         <resource-file src="src/android/LibraryEsa/res/values-sw600dp/dimens.xml" target="res/values-sw600dp/dimens.xml"/>
-        <resource-file src="src/android/LibraryEsa/res/values-tr/strings.xml" target="res/values-tr/strings.xml"/>
-        <resource-file src="src/android/LibraryEsa/res/values-uk/strings.xml" target="res/values-uk/strings.xml"/>
-        <resource-file src="src/android/LibraryEsa/res/values-zh-rCN/strings.xml" target="res/values-zh-rCN/strings.xml"/>
-        <resource-file src="src/android/LibraryEsa/res/values-zh-rTW/strings.xml" target="res/values-zh-rTW/strings.xml"/>
         <resource-file src="src/android/LibraryEsa/res/xml/image_picker_provider_paths.xml" target="res/xml/image_picker_provider_paths.xml"/>
 
 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="ef_permission_write_external_rationale">Conseti l\'accesso alla memoria esterna</string>
+  <string name="ef_ok">OK</string>
+  <string name="ef_done">FATTO</string>
+  <string name="ef_camera">FOTOCAMERA</string>
+  <string name="ef_title_folder">Cartella</string>
+  <string name="ef_title_select_image">Tocca per selezionare</string>
+  <string name="ef_ltitle_permission_denied">Permesso negato</string>
+  <string name="ef_selected">%d selezionate</string>
+  <string name="ef_selected_with_limit">%1$d/%2$d selezionate</string>
+  <string name="ef_error_create_image_file">Creazione file immagine fallita</string>
+  <string name="ef_error_no_camera">Nessuna fotocamera</string>
+  <string name="ef_error_null_cursor">Oops, qualcosa è andato storto!</string>
+  <string name="ef_msg_empty_images">Nessuna immagine</string>
+  <string name="ef_msg_no_write_external_permission">Consenti l\'accesso per selezionare le immagini</string>
+  <string name="ef_msg_no_camera_permission">Consenti l\'accesso alla fotocamera</string>
+  <string name="ef_msg_limit_images">Limite di selezione delle immagini</string>
+  <string name="ef_gif" translatable="false">GIF</string>
+  <string name="ef_video" translatable="false">Video</string>
+  <string name="ef_content_desc_folder" translatable="false">Cartella</string>
+  <string name="ef_content_desc_image" translatable="false">Immagine</string>
+</resources>
