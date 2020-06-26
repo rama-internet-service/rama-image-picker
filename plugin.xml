@@ -220,6 +220,7 @@
         <resource-file src="src/android/LibraryEsa/res/xml/image_picker_provider_paths.xml" target="res/xml/image_picker_provider_paths.xml"/>
 
 
+		<framework src="androidx.recyclerview:recyclerview:1.1.0" />
 		<framework src="com.github.bumptech.glide:glide:4.11.0" />
 
 
