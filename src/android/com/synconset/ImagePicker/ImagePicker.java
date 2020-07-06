@@ -24,9 +24,12 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import android.content.Context;
+import com.synconset.FakeR;
 
 
 public class ImagePicker extends CordovaPlugin {
+    private FakeR fakeR;
 
     private static final String ACTION_GET_PICTURES = "getPictures";
     private static final String ACTION_HAS_READ_PERMISSION = "hasReadPermission";
@@ -54,10 +57,18 @@ public class ImagePicker extends CordovaPlugin {
 
         } else if (ACTION_GET_PICTURES.equals(action)) {
             final JSONObject params = args.getJSONObject(0);
-            //final Intent imagePickerIntent = new Intent(cordova.getActivity(), MultiImageChooserActivity.class);
+          //final Intent imagePickerIntent = new Intent(cordova.getActivity(), MultiImageChooserActivity.class);
             //final Intent imagePickerIntent = new Intent(cordova.getActivity(), ImagePickerActivity.class);
-          final Intent imagePickerIntent = ImagePickerESA.create(cordova.getActivity()).getIntent(cordova.getActivity());
-            int max = 20;
+
+            ////////////final Intent imagePickerIntent = ImagePickerESA.create(cordova.getActivity()).getIntent(cordova.getActivity());
+
+            Context context = this.cordova.getActivity().getApplicationContext();
+           fakeR = new FakeR(context);
+           String d = context.getResources().getString(fakeR.getId("string", "ef_done"));
+
+          final Intent imagePickerIntent = ImagePickerESA.create(cordova.getActivity()).toolbarDoneButtonText(d).getIntent(cordova.getActivity());
+
+          int max = 20;
             int desiredWidth = 0;
             int desiredHeight = 0;
             int quality = 100;
