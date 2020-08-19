@@ -101,12 +101,12 @@
         <config-file target="AndroidManifest.xml" parent="/manifest/application">
             <!-- <activity android:label="@string/multi_app_name" android:name="com.synconset.MultiImageChooserActivity" android:theme="@style/Theme.AppCompat.Light">
             </activity> -->
-            <activity android:name="com.esafirm.imagepicker.features.ImagePickerActivity" />            
+            <activity android:name="com.esafirm.imagepicker.features.ImagePickerActivity" android:theme="@style/ef_BaseTheme"/>            
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-            <application android:theme="@style/ef_BaseTheme" />
+            <!-- <application android:theme="@style/ef_BaseTheme" /> -->
         </config-file>
 
         <framework src="com.android.support:appcompat-v7:23+" />
