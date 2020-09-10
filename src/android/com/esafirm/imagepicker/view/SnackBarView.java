@@ -58,9 +58,10 @@ public class SnackBarView extends RelativeLayout {
         setAlpha(0f);
 
         //txtCaption = findViewById(R.id.ef_snackbar_txt_bottom_caption);
-        txtCaption = findViewById(fakeR.getId("layout", "ef_snackbar_txt_bottom_caption"));
+        //txtCaption = findViewById(fakeR.getId("layout", "ef_snackbar_txt_bottom_caption"));
+        txtCaption = findViewById(fakeR.getId("id", "ef_snackbar_txt_bottom_caption"));
         //btnAction = findViewById(R.id.ef_snackbar_btn_action);
-        btnAction = findViewById(fakeR.getId("layout", "ef_snackbar_btn_action"));
+        btnAction = findViewById(fakeR.getId("id", "ef_snackbar_btn_action"));
     }
 
     public void setText(@StringRes int textResId) {
